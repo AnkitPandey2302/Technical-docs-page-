@@ -1,0 +1,98 @@
+/* Set box-sizing property for all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Set styles for body element */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Set styles for header element */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Set styles for main element */
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Set styles for .main-section element */
+.main-section {
+  flex: 1;
+  padding: 10px;
+}
+
+/* Set styles for .main-section header element */
+.main-section > header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Set styles for .main-section p element */
+.main-section p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* Set styles for .main-section code element */
+.main-section code {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+/* Set styles for .main-section ul element */
+.main-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* Set styles for .nav-link element */
+.nav-link {
+  display: block;
+  padding: 5px;
+}
+
+/* Set styles for #navbar element */
+#navbar {
+  background-color: #f1f1f1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Set styles for #navbar header element */
+#navbar > header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Set styles for active .nav-link element */
+.nav-link.active {
+  background-color: #ddd;
+}
+ 
+/* Set media query for larger screens */
+@media screen and (min-width: 768px) {
+  #navbar {
+    width: 300px;
+  }
+  main {
+    margin-left: 300px;
+  }
+}
